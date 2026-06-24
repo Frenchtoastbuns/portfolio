@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(rgba(244, 245, 242, 0.78), rgba(244, 245, 242, 0.93)),
+    url("/circuit-board-background.png") center top / 760px auto repeat fixed,
+    #f4f5f2;
+}
+
+::selection {
+  background: rgba(15, 138, 131, 0.18);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.focus-ring {
+  @apply outline-none ring-offset-2 ring-offset-paper transition focus-visible:ring-2 focus-visible:ring-circuit;
+}
+
+.site-bg {
+  position: relative;
+}
+
+.project-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-accent::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+  background-size: 18px 10px;
+  opacity: 0.48;
+}
+
+.accent-pcb {
+  background: linear-gradient(90deg, #0f8a83, #6bc7c2);
+}
+
+.accent-fpga {
+  background: linear-gradient(90deg, #314f7c, #84a7d6);
+}
+
+.accent-embedded {
+  background: linear-gradient(90deg, #b86f2d, #e7b36d);
+}
+
+.accent-research {
+  background: linear-gradient(90deg, #246f63, #95c8b9);
+}
+
+.accent-software {
+  background: linear-gradient(90deg, #4f5d75, #9aa6b7);
+}
+
+.accent-control {
+  background: linear-gradient(90deg, #7c5a31, #c7a16b);
+}
