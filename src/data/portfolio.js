@@ -40,6 +40,8 @@ export const projects = [
     visual: "pcb",
     summary:
       "Designed and assembled a PCB-based audio spectrum visualiser with analogue signal conditioning, embedded sampling, and visual output stages. Work included schematic capture, PCB layout, soldering, bring-up, and signal-level validation.",
+    shortSummary:
+      "PCB audio visualiser covering schematic design, layout, assembly, bring-up, and signal validation.",
     technologies: ["KiCad", "PCB design", "Analogue circuits", "Soldering", "Hardware bring-up"],
     tags: ["Hardware", "Embedded"],
     role: "Hardware design, assembly, and validation",
@@ -57,6 +59,8 @@ export const projects = [
     visual: "fpga",
     summary:
       "Implemented deterministic control logic on a DE10-Lite FPGA using Verilog RTL. The system focused on timing-aware I/O handling, simulation-led verification, and predictable real-time behaviour.",
+    shortSummary:
+      "DE10-Lite FPGA control system using Verilog RTL, ModelSim simulation, and timing-aware I/O.",
     technologies: ["Verilog", "DE10-Lite", "ModelSim", "RTL design", "Real-time control"],
     tags: ["FPGA", "Control", "Hardware"],
     role: "RTL design and verification",
@@ -74,6 +78,8 @@ export const projects = [
     visual: "embedded",
     summary:
       "Built a microcontroller-based game console with display output, button input, and firmware for real-time interaction. The project emphasized constrained-resource programming, peripheral integration, and iterative debugging.",
+    shortSummary:
+      "Microcontroller game console integrating display output, button input, and real-time firmware.",
     technologies: ["C/C++", "Embedded firmware", "GPIO", "Display interfaces", "Debugging"],
     tags: ["Embedded", "Software"],
     role: "Embedded firmware and peripheral integration",
@@ -91,6 +97,8 @@ export const projects = [
     visual: "research",
     summary:
       "Explored embedded machine learning workflows targeting ESP32-S3-class hardware. Work covered model preparation, on-device inference constraints, latency measurement, and deployment trade-offs for edge AI systems.",
+    shortSummary:
+      "TinyML research on ESP32-S3-class hardware, edge inference constraints, and benchmarking.",
     technologies: ["ESP32-S3", "TensorFlow Lite Micro", "PyTorch", "TinyML", "Validation"],
     tags: ["AI/ML", "Embedded", "Research"],
     role: "TinyML research and benchmarking",
@@ -113,6 +121,8 @@ export const projects = [
     visual: "research",
     summary:
       "Incoming research work focused on implementing an ordered statistics decoding (OSD) decoder on FPGA hardware. Listed as upcoming implementation work, not as a completed publication.",
+    shortSummary:
+      "Incoming KAIST work implementing an OSD decoder on FPGA hardware.",
     technologies: ["Digital communications", "OSD decoding", "FPGA", "Hardware implementation"],
     tags: ["Research", "FPGA", "Hardware"],
     role: "Incoming research intern",
@@ -129,6 +139,8 @@ export const projects = [
     visual: "software",
     summary:
       "Developed a computation-focused risk engine using stochastic simulation techniques. The work emphasized numerical methods, performance-aware implementation, and clear validation of outputs.",
+    shortSummary:
+      "Stochastic simulation engine focused on numerical methods, performance, and output validation.",
     technologies: ["Python", "Numerical methods", "Simulation", "Performance analysis"],
     tags: ["Software"],
     role: "Software engineering and numerical simulation",
@@ -145,6 +157,8 @@ export const projects = [
     visual: "control",
     summary:
       "Contributed to Formula Student control engineering work with attention to system requirements, testability, and reliable integration across electrical and mechanical interfaces.",
+    shortSummary:
+      "Formula Student control work spanning modelling, testability, documentation, and integration.",
     technologies: ["Control systems", "MATLAB", "Simulink", "Testing", "Documentation"],
     tags: ["Control", "Hardware"],
     role: "Control engineering and system integration",
@@ -161,6 +175,8 @@ export const projects = [
     visual: "research",
     summary:
       "Prepared a technical manuscript focused on deployment state verification, with emphasis on validation, technical structure, and clear engineering communication.",
+    shortSummary:
+      "Submitted verification manuscript focused on deployment-state reasoning and validation structure.",
     technologies: ["Technical writing", "Verification", "Validation", "Documentation"],
     tags: ["Research", "Software"],
     role: "Technical manuscript and verification-focused research",
@@ -285,6 +301,34 @@ export const moduleYears = [
       { name: "Individual Engineering Project", credits: 40 },
       { name: "Digital Media Engineering", credits: 10 },
       { name: "Professional Studies", credits: 10 },
+    ],
+  },
+];
+
+export const moduleHighlights = [
+  {
+    title: "Hardware & Electronics",
+    modules: [
+      "Digital Electronics and Microcontrollers",
+      "Electronic Circuit and Systems Design",
+      "Microprocessors and Programmable Logic",
+    ],
+  },
+  {
+    title: "Embedded & Computing",
+    modules: [
+      "Embedded Systems Project",
+      "IoT and Edge Computing",
+      "Algorithms and Numerical Mathematics",
+    ],
+  },
+  {
+    title: "Signals, AI & Control",
+    modules: [
+      "Communications Theory",
+      "Machine Learning",
+      "Control Systems",
+      "Audio Signal Processing",
     ],
   },
 ];
