@@ -1,6 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 
 function ProjectCard({ project, featured = false, onSelect }) {
+  const previewMedia = project.media?.find((item) => item.type === "image");
+
   return (
     <button
       type="button"
@@ -14,6 +16,20 @@ function ProjectCard({ project, featured = false, onSelect }) {
         className={`project-accent accent-${project.visual} ${featured ? "h-2" : "h-1.5"}`}
         aria-hidden="true"
       />
+      {previewMedia ? (
+        <div
+          className={`overflow-hidden border-b border-ink/10 bg-paper ${
+            featured ? "h-48" : "h-24"
+          }`}
+        >
+          <img
+            src={previewMedia.src}
+            alt={previewMedia.alt}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+            loading="lazy"
+          />
+        </div>
+      ) : null}
       <div className={`flex flex-1 flex-col ${featured ? "p-6" : "p-5"}`}>
         <div className="flex flex-1 flex-col">
           {project.status ? (

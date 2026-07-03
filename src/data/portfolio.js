@@ -46,6 +46,25 @@ export const projects = [
     tags: ["Hardware", "Embedded"],
     role: "Hardware design, assembly, and validation",
     status: "Completed",
+    media: [
+      {
+        type: "image",
+        src: "/project-media/audio-visualiser-assembled-pcb.jpeg",
+        alt: "Assembled PCB for the audio spectrum visualiser project",
+        caption: "Assembled PCB hardware",
+      },
+      {
+        type: "image",
+        src: "/project-media/audio-visualiser-pcb-layout.png",
+        alt: "PCB layout screenshot for the audio spectrum visualiser project",
+        caption: "PCB layout and routing",
+      },
+      {
+        type: "video",
+        src: "/project-media/audio-visualiser-demo.mp4",
+        caption: "Hardware demonstration video",
+      },
+    ],
     details: [
       "Designed the hardware around analogue audio conditioning, sampling, and display-driving constraints.",
       "Produced the PCB layout, assembled the board, and debugged bring-up issues at circuit and system level.",

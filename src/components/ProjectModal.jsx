@@ -65,6 +65,42 @@ function ProjectModal({ project, onClose }) {
 
           <p className="mt-5 text-sm leading-7 text-steel sm:text-base">{project.summary}</p>
 
+          {project.media?.length ? (
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {project.media.map((item) => (
+                <figure
+                  key={item.src}
+                  className={`overflow-hidden rounded-lg border border-ink/10 bg-paper shadow-line ${
+                    item.type === "video" ? "sm:col-span-2" : ""
+                  }`}
+                >
+                  {item.type === "image" ? (
+                    <img
+                      src={item.src}
+                      alt={item.alt}
+                      className="h-56 w-full object-cover sm:h-64"
+                    />
+                  ) : null}
+                  {item.type === "video" ? (
+                    <video
+                      src={item.src}
+                      className="max-h-[520px] w-full bg-ink"
+                      controls
+                      preload="metadata"
+                    >
+                      <a href={item.src}>View project video</a>
+                    </video>
+                  ) : null}
+                  {item.caption ? (
+                    <figcaption className="border-t border-ink/10 px-4 py-3 text-xs font-semibold text-graphite">
+                      {item.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              ))}
+            </div>
+          ) : null}
+
           {project.details?.length ? (
             <div className="mt-6">
               <h3 className="text-sm font-semibold uppercase text-ink">Engineering Focus</h3>
