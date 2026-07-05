@@ -59,11 +59,6 @@ export const projects = [
         alt: "PCB layout screenshot for the audio spectrum visualiser project",
         caption: "PCB layout and routing",
       },
-      {
-        type: "video",
-        src: "/project-media/audio-visualiser-demo.mp4",
-        caption: "Hardware demonstration video",
-      },
     ],
     details: [
       "Designed the hardware around analogue audio conditioning, sampling, and display-driving constraints.",
@@ -103,6 +98,13 @@ export const projects = [
     tags: ["Embedded", "Software"],
     role: "Embedded firmware and peripheral integration",
     status: "Completed",
+    media: [
+      {
+        type: "video",
+        src: "/project-media/audio-visualiser-demo.mp4",
+        caption: "Game console demonstration video",
+      },
+    ],
     details: [
       "Developed firmware for responsive input handling, rendering, and game-state updates.",
       "Integrated display and button interfaces while managing limited embedded resources.",
