@@ -100,6 +100,12 @@ export const projects = [
     status: "Completed",
     media: [
       {
+        type: "image",
+        src: "/project-media/game-console-hardware.png",
+        alt: "Breadboarded embedded game console hardware with display and joystick wiring",
+        caption: "Prototype hardware setup",
+      },
+      {
         type: "video",
         src: "/project-media/audio-visualiser-demo.mp4",
         caption: "Game console demonstration video",
