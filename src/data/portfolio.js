@@ -152,20 +152,20 @@ export const projects = [
     ],
   },
   {
-    title: "Incoming KAIST Research Internship - OSD Decoder on FPGA Hardware",
+    title: "KAIST Research Internship - OSD Decoder on FPGA Hardware",
     visual: "research",
     summary:
-      "Incoming research work focused on implementing an ordered statistics decoding (OSD) decoder on FPGA hardware. Listed as upcoming implementation work, not as a completed publication.",
+      "Current research work focused on implementing an ordered statistics decoding (OSD) decoder on FPGA hardware. Listed as active implementation work, not as a completed publication.",
     shortSummary:
-      "Incoming KAIST work implementing an OSD decoder on FPGA hardware.",
+      "Current KAIST work implementing an OSD decoder on FPGA hardware.",
     technologies: ["Digital communications", "OSD decoding", "FPGA", "Hardware implementation"],
     tags: ["Research", "FPGA", "Hardware"],
-    role: "Incoming research intern",
-    status: "Incoming",
+    role: "Research intern",
+    status: "Current",
     details: [
-      "Planned work will implement an OSD decoder on FPGA hardware.",
-      "Expected focus areas include hardware architecture, RTL implementation, integration constraints, and FPGA validation.",
-      "This entry represents future internship work and is not presented as a published paper.",
+      "Implementing an OSD decoder on FPGA hardware.",
+      "Focus areas include hardware architecture, RTL implementation, integration constraints, and FPGA validation.",
+      "This entry represents active internship work and is not presented as a published paper.",
     ],
     links: [],
   },
@@ -233,13 +233,13 @@ export const projects = [
 
 export const experience = [
   {
-    role: "Incoming Research Intern",
+    role: "Research Intern",
     organization: "KAIST",
-    period: "Incoming",
+    period: "Current",
     summary:
-      "Incoming research role focused on implementing an ordered statistics decoding (OSD) decoder on FPGA hardware for advanced communication systems.",
+      "Research role focused on implementing an ordered statistics decoding (OSD) decoder on FPGA hardware for advanced communication systems.",
     highlights: [
-      "Expected to work on OSD decoder hardware architecture, RTL implementation, FPGA integration, and validation.",
+      "Working on OSD decoder hardware architecture, RTL implementation, FPGA integration, and validation.",
       "Research aligned with semiconductor, digital systems, and hardware acceleration interests.",
     ],
   },
@@ -268,7 +268,7 @@ export const experience = [
   {
     role: "Secretary",
     organization: "ShockSoc",
-    period: "Current",
+    period: "Completed",
     summary:
       "Committee role supporting society operations, communication, records, and coordination for an electronics and electrical engineering community.",
     highlights: [
