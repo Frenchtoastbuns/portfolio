@@ -79,6 +79,14 @@ export const projects = [
     tags: ["FPGA", "Control", "Hardware"],
     role: "RTL design and verification",
     status: "Completed",
+    media: [
+      {
+        type: "image",
+        src: "/project-media/fpga-de10-lite-control.png",
+        alt: "DE10-Lite FPGA board running the real-time control system project",
+        caption: "DE10-Lite FPGA hardware",
+      },
+    ],
     details: [
       "Built timing-aware control logic in Verilog for deterministic I/O response.",
       "Used ModelSim simulation to validate logic behaviour before FPGA deployment.",
